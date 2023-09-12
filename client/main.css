@@ -1,5 +1,17 @@
 * {
     box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 10px;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    /* color: rgb(255, 220, 62); */
 }
 
 h1, h2, h3 {
@@ -10,6 +22,10 @@ h1, h2, h3 {
 
 button {
     cursor: pointer;
+    /* background-color: rgb(75, 75, 75); */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 div.form-action-bar {
@@ -19,6 +35,7 @@ div.form-action-bar {
 }
 
 .main-action-bar {
+    margin: 3px;
     border: 1px solid;
     display: flex;
     padding: 1rem;
@@ -27,11 +44,13 @@ div.form-action-bar {
 .main-action-bar .search {
     flex-grow: 1;
     display: flex;
+    gap: .5em;
 }
 
 .main-action-bar .search input {
     flex-grow: 1;
     padding: .5em;
+    border-radius: 35px;    
 }
 
 main {

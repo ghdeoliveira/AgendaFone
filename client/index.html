@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Agenda Fone</title>
     <link rel="stylesheet" href="main.css">
     <script async defer src="main.js"></script>
@@ -12,14 +13,15 @@
         <h1>Agenda Marota</h1>
         <div class="main-action-bar">
             <div class="search">
-                <input type="text">
-                <button>P</button>
-                <button>+</button>
+                <input type="text" placeholder="Quem você procura?">
+                <button><i class='bx bxs-search-alt-2'></i></button>
+                <button><i class='bx bxs-message-square-add' ></i></button>
             </div>
         </div>
     </header>
     
     <main>
+        <template>
         <form class="form-add tile">
             <div>
                 <label for="name">Nome Completo</label>
@@ -40,6 +42,7 @@
                 <button class="btn-action-add">Adicionar</button>
             </div>
         </form>
+        </template>
 
         <div class="person tile">
             <h2>Nome da Pessoa</h2>
@@ -64,8 +67,8 @@
                 </div>
             </div>
             <div class="form-action-bar">
-                <button class="btn-action-change">Editar</button>
-                <button class="btn-action-delete">Excluir</button>            
+                <button class="btn-action-change"><i class='bx bxs-edit-alt' ></i></button>
+                <button class="btn-action-delete"><i class='bx bxs-message-square-x' ></i></button>            
             </div>
         </div>
     </main>
